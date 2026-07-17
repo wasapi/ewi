@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SWAMDataStore>
+  <DefaultPresetFile value="C:\Users\Public\Documents\Audio Modeling\SWAMv3\SoloStrings\Strings\Cello\Resources\Presets\Factory\EWI Default.swamec"/>
+  <LastVisitedFolder value="C:\users\root\Documents"/>
+  <GraphicSettings ratioindex="2" displaytypeindex="1"/>
+  <ControlSurfaceSettings controlSurfaceKeyboardSize="1" controlSurfaceStartingNote="64"
+                          controlSurfaceXParam="0" controlSurfaceYParam="0"/>
+  <Options disableScreenLlock="0" enableScrollwheelHorizontalSliders="0"
+           virtualPort="0" middleC4="0" highQualityGraphics="1" lenghtUnitMeasure="0"
+           showRoomNewFeature="1"/>
+</SWAMDataStore>

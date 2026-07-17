@@ -60,6 +60,9 @@ RUN cp /wineasio/build64/wineasio64.dll /opt/wineprefix/drive_c/windows/system32
 
 # Paramétrage audio/midi de Reaper
 COPY REAPER.ini /opt/wineprefix/drive_c/users/root/AppData/Roaming/REAPER/REAPER.ini
+COPY default_datastore.xml /tmp/default_datastore.xml
+COPY set-default-datastore.sh /tmp/set-default-datastore.sh
+RUN mkdir -p /opt/wineprefix/drive_c/users/root/AppData/Roaming/Audio\ Modeling/UserData && bash /tmp/set-default-datastore.sh
 
 # Script pour démarrer reaper
 RUN echo '#!/bin/bash\n\nwine regsvr32 /s wineasio64.dll\npw-jack wine "/opt/wineprefix/drive_c/Program Files/REAPER (x64)/reaper.exe" /nosplash\n' \
